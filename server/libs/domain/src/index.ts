@@ -5,3 +5,4 @@ export * from './job';
 export * from './oauth';
 export * from './system-config';
 export * from './user';
+export * from './user-token';
