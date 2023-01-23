@@ -1,10 +1,7 @@
-import { UserEntity } from '../entities';
-import { IUserRepository, UserListFilter } from '@app/domain';
-import { Injectable, InternalServerErrorException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Not, Repository } from 'typeorm';
+import { Repository } from 'typeorm';
 import { UserTokenEntity } from '@app/infra/db/entities/user-token.entity';
-import { string } from 'joi';
 import { IUserTokenRepository } from '@app/domain/user-token';
 
 @Injectable()

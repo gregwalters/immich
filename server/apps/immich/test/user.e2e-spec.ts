@@ -3,7 +3,7 @@ import { INestApplication } from '@nestjs/common';
 import request from 'supertest';
 import { clearDb, authCustom } from './test-utils';
 import { InfraModule } from '@app/infra';
-import { ImmichJwtModule } from '../src/modules/immich-jwt/immich-jwt.module';
+import { ImmichJwtModule } from '../src/modules/immich-auth/immich-auth.module';
 import { DomainModule, CreateUserDto, UserService, AuthUserDto } from '@app/domain';
 import { DataSource } from 'typeorm';
 import { UserController } from '../src/controllers';

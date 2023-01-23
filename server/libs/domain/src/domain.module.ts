@@ -4,7 +4,6 @@ import { AuthService } from './auth';
 import { OAuthService } from './oauth';
 import { INITIAL_SYSTEM_CONFIG, SystemConfigService } from './system-config';
 import { UserService } from './user';
-import { UserTokenService } from '@app/domain/user-token';
 
 const providers: Provider[] = [
   APIKeyService,
@@ -12,7 +11,6 @@ const providers: Provider[] = [
   OAuthService,
   SystemConfigService,
   UserService,
-  UserTokenService,
   {
     provide: INITIAL_SYSTEM_CONFIG,
     inject: [SystemConfigService],
