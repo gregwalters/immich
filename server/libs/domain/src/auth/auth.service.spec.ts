@@ -3,7 +3,6 @@ import { BadRequestException, UnauthorizedException } from '@nestjs/common';
 import { generators, Issuer } from 'openid-client';
 import { Socket } from 'socket.io';
 import {
-  authStub,
   userEntityStub,
   loginResponseStub,
   newCryptoRepositoryMock,
